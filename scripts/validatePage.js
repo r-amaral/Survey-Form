@@ -78,3 +78,12 @@ export function validateForm(page) {
 
     navigationPage(page);
 }
+
+
+export function newForm(page) {
+    fullNameInput.value = null;
+    emailInput.value = null;
+    ageInput.value = null;
+    textArea.value = null
+    navigationPage(page);
+}

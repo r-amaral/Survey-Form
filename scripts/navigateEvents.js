@@ -5,6 +5,7 @@ import {
     validateInvest,
     validateDetails,
     validateForm,
+    newForm
 } from "./validatePage.js";
 
 const buttonNext = {
@@ -33,4 +34,5 @@ buttonStatus.addEventListener("click", () => validateStatus("Invest"));
 buttonInvest.addEventListener("click", () => validateInvest("Details"));
 buttonDetails.addEventListener("click", () => validateDetails("Data"));
 buttonForm.addEventListener("click", () => validateForm("Success"));
-buttonSuccess.addEventListener("click", () => navigationPage("Welcome"));
+buttonSuccess.addEventListener("click", () => newForm("Welcome"));
+
