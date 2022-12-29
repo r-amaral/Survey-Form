@@ -1,0 +1,66 @@
+@import "../abstract/_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+.main__content {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    .section_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6.2%;
+        box-sizing: border-box;
+        padding: 0 7%;
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .welcome {
+        display: flex;
+    }
+
+    .start {
+        display: none;
+    }
+
+    .status {
+        display: none;
+    }
+
+    .invest {
+        display: none;
+    }
+
+    .details {
+        display: none;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .success {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main__content {
+        gap: 20px;
+
+        .section_content {
+            padding: 10px 7%;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Survey - Form</title>
+</head>
+
+<body>
+    <main class="main__content">
+        <section class="section_content welcome">
+            <div class="image__container">
+                <img class="image__style image__style--first-page" src="./assets/imgs/person_first_page.svg" alt="" />
+            </div>
+            <div class="content__container">
+                <div class="content">
+                    <h1 class="main__title">welcome</h1>
+                    <span class="span__content span__content--first-page">Thanks for participating in the poll</span>
+                    <div class="button__container">
+                        <button class="button__survey button__survey--wellcome skip-button">
+                            Let's go
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_content start">
+            <div class="image__container">
+                <img class="image__style" src="./assets/imgs/person_secondary_page.svg" alt="" />
+            </div>
+            <div class="content__container">
+                <div class="content">
+                    <h2 class="secondary__title">
+                        Necessities of working in financial markets
+                    </h2>
+                    <p class="text__content">
+                        This research is to find the reasons for the failure
+                        of people in financial markets. The results of this
+                        survey will be emailed to you along with the
+                        analysis of our experienced experts.
+                    </p>
+                    <div class="button__container">
+                        <button class="button__survey back-button">
+                            Back to Home
+                        </button>
+                        <button class="button__survey skip-button">
+                            Fill out the form
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_content status">
+            <div class="image__container">
+                <img class="image__style" src="./assets/imgs/person_third_page.svg" alt="" />
+            </div>
+            <div class="content__container">
+                <div class="content">
+                    <span class="span__content--status">
+                        What is the status of your account?
+                    </span>
+
+                    <div class="content__select__container">
+                        <select class="content__select content__select-status">
+                            <option class="option" value="">
+                                I have not created an account yet.
+                            </option>
+                            <option class="option" value="1">
+                                option 1
+                            </option>
+                            <option class="option" value="2">
+                                option 2
+                            </option>
+                        </select>
+                        <i class="content__select__icon"></i>
+                    </div>
+
+                    <span class="span__content--status">
+                        In which financial markets do you operate?
+                    </span>
+
+                    <ul class="list">
+                        <li class="list__item">
+                            <input class="list__input list__input-status list__input--radio" id="stock" type="radio"
+                                name="status" />
+                            <label class="list__label" for="stock">Stock market</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-status list__input--radio" id="foreign" type="radio"
+                                name="status" />
+                            <label class="list__label" for="foreign">Foreign exchange</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-status list__input--radio" id="commodity" type="radio"
+                                name="status" />
+                            <label class="list__label" for="commodity">Commodity</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-status list__input--radio" id="bond-market"
+                                type="radio" name="status" />
+                            <label class="list__label" for="bond-market">Bond market</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-status list__input--radio" id="cryptocurrency"
+                                type="radio" name="status" />
+                            <label class="list__label" for="cryptocurrency">Cryptocurrency market</label>
+                        </li>
+                    </ul>
+
+                    <div class="button__container">
+                        <button class="button__survey back-button button__survey--back">
+                            Back
+                        </button>
+                        <button class="button__survey next__button-status button__survey--next">
+                            Next
+                        </button>
+                        <button class="button__survey skip-button button__survey--skip">
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_content invest">
+            <div class="image__container">
+                <img class="image__style" src="./assets/imgs/person_fourth_page.svg" alt="" />
+            </div>
+
+            <div class="content__container">
+                <div class="content">
+                    <span class="span__content--status">
+                        How do you decide to invest?
+                    </span>
+
+                    <div class="content__select__container">
+                        <select class="content__select content__select-invest">
+                            <option value="">
+                                I have not invested yet.
+                            </option>
+                            <option value="1">option 1</option>
+                            <option value="2">option 2</option>
+                        </select>
+                        <i class="content__select__icon"></i>
+                    </div>
+
+                    <span class="span__content--status">
+                        What resources have you used or are you using for
+                        your training?
+                    </span>
+
+                    <ul class="list">
+                        <li class="list__item">
+                            <input class="list__input list__input-invest" id="Books" type="checkbox" />
+                            <label class="list__label" for="Books">Books and articles</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-invest" id="videos" type="checkbox" />
+                            <label class="list__label" for="videos">YouTube tutorial videos</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-invest" id="courses" type="checkbox" />
+                            <label class="list__label" for="courses">Online or face to face courses</label>
+                        </li>
+                        <li class="list__item">
+                            <input class="list__input list__input-invest" id="investment" type="checkbox" />
+                            <label class="list__label" for="investment">Experience with little investment</label>
+                        </li>
+                    </ul>
+
+                    <div class="button__container">
+                        <button class="button__survey back-button button__survey--back">
+                            Back
+                        </button>
+                        <button class="button__survey next__button-invest button__survey--next">
+                            Next
+                        </button>
+                        <button class="button__survey skip-button button__survey--skip">
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_content details">
+            <div class="image__container">
+                <img class="image__style" src="./assets/imgs/person_thursday_page.svg" alt="" />
+            </div>
+            <div class="content__container">
+                <div class="content">
+                    <span class="span__content--status">
+                        If you or someone close to you has already made a
+                        loss on the investment, write down the details
+                    </span>
+
+                    <textarea class="content__textarea" maxlength="300"></textarea>
+
+                    <div class="button__container">
+                        <button class="button__survey back-button button__survey--back">
+                            Back
+                        </button>
+                        <button class="button__survey next__button-details button__survey--next">
+                            Next
+                        </button>
+                        <button class="button__survey skip-button button__survey--skip">
+                            Skip
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_content form">
+            <div class="image__container">
+                <img class="image__style" src="./assets/imgs/person_friday_page.svg" alt="" />
+            </div>
+            <div class="content__container">
+                <div class="content">
+                    <form class="content__form">
+                        <div class="input__container">
+                            <label class="content__form__label" for="full-name">Full Name:</label>
+                            <input class="content__form__input" type="text" id="full-name"
+                                placeholder="Nasser Toghiri" />
+                        </div>
+
+                        <div class="input__container">
+                            <label class="content__form__label" for="email">Email:</label>
+                            <input class="content__form__input" type="email" id="email"
+                                placeholder="N.Toghiri@Gmail.com" />
+                        </div>
+
+                        <div class="input__container">
+                            <label class="content__form__label" for="age">Age:</label>
+                            <input class="content__form__input content__form__input--age" type="number" id="age"
+                                placeholder="-- --" />
+                        </div>
+                    </form>
+                    <div class="button__container">
+                        <button class="button__survey back-button button__survey--form">
+                            Back
+                        </button>
+                        <button class="button__survey next__button-form button__survey--form">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__container success">
+            <article class="container__success">
+                <h1 class="sucess__main__title">Sucess</h1>
+                <div>
+                    <div class="container__sucess__item">
+                        <h2 class="title__success">FullName:</h2>
+                        <span class="success__item success__item-fullName"></span>
+                    </div>
+                    <div class="container__sucess__item">
+                        <h2 class="title__success">Email:</h2>
+                        <span class="success__item success__item-email"></span>
+                    </div>
+                    <div class="container__sucess__item">
+                        <h2 class="title__success">Age:</h2>
+                        <span class="success__item success__item-age"></span>
+                    </div>
+                </div>
+                <button class="button__sucess">New Form</button>
+            </article>
+        </section>
+    </main>
+
+    <script type="module" src="./scripts/navigation.js"></script>
+    <script type="module" src="./scripts/navigateEvents.js"></script>
+    <script type="module" src="./scripts/validatePage.js"></script>
+</body>
+
+</html>

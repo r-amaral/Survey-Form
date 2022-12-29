@@ -1,0 +1,55 @@
+@import "../abstract/_variables.scss";
+
+.button__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 4%;
+    box-sizing: border-box;
+    width: 100%;
+
+    .button__survey {
+        background: $primary-color;
+        border-radius: 35px;
+        color: $secundary-color;
+        outline: none;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 700;
+        font-size: 22px;
+        min-height: 36px;
+        width: 48%;
+        box-sizing: border-box;
+
+        &:hover {
+            background: $secundary-color;
+            border-radius: 35px;
+            color: $primary-color;
+        }
+    }
+
+    .button__survey--wellcome {
+        width: 44.6%;
+    }
+
+    .button__survey--fill-out-the-form {
+        width: 44.6%;
+    }
+
+    .button__survey--skip {
+        width: 100%;
+    }
+
+    .button__survey--form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button__container {
+        .button__survey {
+            font-size: 16px;
+        }
+    }
+}

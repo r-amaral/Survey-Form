@@ -1,0 +1,66 @@
+@import "../abstract/_variables.scss";
+
+.success {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container__success {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+
+        padding: 5%;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        border-radius: 40px;
+
+        >div {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .sucess__main__title {
+            width: 100%;
+            display: flex;
+            font-size: 50px;
+            color: $secundary-color;
+            font-weight: bold;
+            justify-self: flex-start;
+        }
+
+        .container__sucess__item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .title__success {
+                font-size: 22px;
+                font-weight: bold;
+                color: $secundary-color;
+            }
+
+            .success__item {
+                font-size: 18px;
+                color: $secundary-color;
+            }
+        }
+
+        .button__sucess {
+            background-color: $secundary-color;
+            padding: 10px;
+            font-weight: bold;
+            color: $primary-color;
+            width: 30%;
+            align-self: flex-end;
+            justify-self: flex-end;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    }
+}
